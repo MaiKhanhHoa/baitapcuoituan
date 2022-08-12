@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="input" value="link">
+<input type="text" id="input2" value="so lan in">
+<button type="button" onclick="hienthianh()">Click</button>
+<h3 id="hienthi"></h3>
+</body>
+<script>
+    function hienthianh() {
+        let a = document.getElementById("input").value
+        let b = +document.getElementById("input2").value
+        for (let i=1;i<=b;i++) {
+            document.getElementById("hienthi").innerHTML += '<img src="' + a + '" alt="hinhanh" id="img" >'
+        }
+    }
+</script>
+</html>

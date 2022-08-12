@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="input">
+<input type="text" id="input2">
+<button type="button" onclick="hienthi()">Click</button>
+<h3 id="hienthi"></h3>
+</body>
+<script>
+    function hienthi() {
+        let a = +document.getElementById("input").value
+        let b = +document.getElementById("input2").value
+        let sum = 0
+        for (let i = a; i <= b; i++) {
+            sum = sum + i;
+        }
+        document.getElementById("hienthi").innerHTML = sum
+    }
+
+</script>
+</html>

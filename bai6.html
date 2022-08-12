@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="input">
+<button type="button" onclick="hienthi()">Click</button>
+<h3 id="ketqua"></h3>
+</body>
+<script>
+    function hienthi() {
+        let a = document.getElementById("input").value
+        for (let i = 1; i <= 20; i++) {
+            document.getElementById("ketqua").innerHTML += i + '. ' + a + "<br>"
+
+        }
+    }
+</script>
+</html>
